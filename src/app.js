@@ -36,7 +36,7 @@
   function mostrar(i) {
     actual = (i + fotos.length) % fotos.length;
     var alt = fotos[actual].querySelector('img').alt;
-    $('visor-img').src = fotos[actual].href + '?enable-io=true&width=1600';
+    $('visor-img').src = fotos[actual].href;
     $('visor-img').alt = alt;
     $('visor-pie').textContent = alt + ' (' + (actual + 1) + ' de ' + fotos.length + ')';
   }

@@ -13,7 +13,8 @@ src/                         ← la web (esta carpeta es la que se publica)
 ├── estilos.css
 ├── app.js                   ← menú, galería y calendario de disponibilidad y tarifas
 ├── consentimiento.js        ← aviso de cookies y bloqueo previo al consentimiento
-└── tarifas.json             ← copia de respaldo de fechas y precios
+├── tarifas.json             ← copia de respaldo de fechas y precios
+└── img/                     ← fotografías
 GUIA_HOJA_GOOGLE.md          ← cómo se editan las fechas y los precios
 hoja_caserio_las_vinas.xlsx  ← plantilla de la hoja de Google
 ```
@@ -39,7 +40,6 @@ y con `src` como directorio de salida. Cada cambio en la rama `main` se publica 
 
 ## Pendiente antes de publicar con el dominio definitivo
 
-- Copiar las fotografías al repositorio: ahora se enlazan desde el servidor de la web anterior.
 - Servir las tipografías Lora y Karla desde la propia web en lugar de Google Fonts.
 - Completar el NIF del titular en el aviso legal.
 - Migrar las condiciones de reserva, que aún enlazan a la web anterior.
