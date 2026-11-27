@@ -115,7 +115,8 @@
     mesSel = Math.max(0, Math.min(meses.length - 1, i));
     Array.prototype.forEach.call($('meses').children, function (b, j) {
       b.setAttribute('aria-selected', String(j === mesSel));
-      if (j === mesSel && b.scrollIntoView) b.scrollIntoView({ block: 'nearest', inline: 'center' });
+      /* Centra el mes elegido moviendo solo la tira de meses, nunca la página */
+      if (j === mesSel) b.parentNode.scrollLeft = b.offsetLeft - b.parentNode.offsetLeft - (b.parentNode.clientWidth - b.offsetWidth) / 2;
     });
     pintarCalendario();
     pintarPrecios();
